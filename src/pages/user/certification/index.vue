@@ -248,7 +248,7 @@ const validatorType = (rule: any, value: any, callBack: any) => {
 };
 
 //证件号码的校验方法
-const validatorNo = (rule: any, value: any, callBack) => {
+const validatorNo = (rule: any, value: any, callBack: any) => {
   let sfz = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/;
   let hkb = /^\d{9}$/;
   if (sfz.test(value) || hkb.test(value)) {
