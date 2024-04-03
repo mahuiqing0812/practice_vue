@@ -3,6 +3,10 @@ import vue from '@vitejs/plugin-vue'
 //引入node提供内置模块path:可以获取绝对路径
 import path from 'path';
 export default defineConfig({
+  base: "/practice_vue/",
+  build: {
+    outDir: "docs"
+  },
   plugins: [vue()],
   //src文件夹配置别名
   resolve: {
